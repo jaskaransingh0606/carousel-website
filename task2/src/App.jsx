@@ -6,6 +6,7 @@ import Page4 from './AllPages/Page4';
 import Page5 from './AllPages/Page5';
 import Page6 from './AllPages/Page6';
 import Page7 from './AllPages/Page7';
+import SlideCarousal from './AllPages/SlideCarousal';
 
 function App() {
   const totalPages = 7; // Total number of pages
@@ -29,13 +30,19 @@ function App() {
 
   return (
     <div className="App">
-      {activePage === 1 && <Page1 />}
-      {activePage === 2 && <Page2 />}
-      {activePage === 3 && <Page3 />}
-      {activePage === 4 && <Page4 />}
-      {activePage === 5 && <Page5 />}
-      {activePage === 6 && <Page6 />}
-      {activePage === 7 && <Page7 />}
+      <div className='md:hidden '>
+        {activePage === 1 && <Page1 />}
+        {activePage === 2 && <Page2 />}
+        {activePage === 3 && <Page3 />}
+        {activePage === 4 && <Page4 />}
+        {activePage === 5 && <Page5 />}
+        {activePage === 6 && <Page6 />}
+        {activePage === 7 && <Page7 />}
+      </div>
+
+      <div>
+        <SlideCarousal  />
+      </div>
     </div>
   );
 }

@@ -13,32 +13,32 @@ import domi2 from '../assets/dominosImg2.png';
 function Page1() {
   return (
 
-    <div className='flex flex-row h-screen w-screen relative  '>
+    <div className='flex flex-row md:flex-col-reverse  h-screen  w-screen relative  '>
 
-      <div className=' flex flex-col w-2/4 space-y-16 bg-slate-900 justify-end  '>
+      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 md:w-screen bg-slate-900 justify-end  '>
         
-          <div className='flex flex-col space-y-6 mb-10 pl-16'>
+          <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8'>
             <div><p className='font-extrabold text-5xl'>ABC 456</p></div>
-            <div><p className='text-xl font-normal'>We are the best <br /> web development company <br /> in the world</p></div>
+            <div><p className='text-xl md:text-lg font-normal'>We are the best <br /> web development company <br /> in the world</p></div>
           </div>
        
 
-        <div className='flex flex-row space-x-56 align-center  pb-24 pl-16'>
+        <div className='flex flex-row space-x-56 lg:space-x-20 align-center  pb-24 md:pb-8 pl-16'>
           <div><p className='font-medium text-xl'>View Case Study ➡</p></div>
-          <div><p className='font-medium text-xl'>S K I P</p></div>
+          <div><p className='font-medium text-xl md:invisible'>S K I P</p></div>
         </div>
 
       </div>
 
 
-      <div className='w-2/4 bg-slate-950 relative'>
+      <div className='w-2/4 bg-slate-950 bg-cover relative flex md:h-1/2 md:w-screen'>
 
         
           <motion.img 
            initial={{ y: -30,x:-30, opacity: 0 }}
            animate={{ y: 0,x:0, opacity: 1 }}
            transition={{ type: "tween", duration: 1 }}
-          className='h-2/6 absolute top-0 left-0' src={pizzaBox}>
+          className='h-2/6 h-2/7 kt:2/8 absolute top-0 left-0' src={pizzaBox}>
 
           </motion.img>
 
@@ -46,7 +46,7 @@ function Page1() {
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1 }}
-        className='h-3/6 absolute top-28 right-32 ' src={domi2}>
+        className='h-3/6 lg:h-3/7 sm:h-60  absolute top-28 right-32 ' src={domi2}>
 
         </motion.img>
 
@@ -54,7 +54,7 @@ function Page1() {
          initial={{ y: -30,x:30, opacity: 0 }}
          animate={{ y: 0,x:0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-1/5 absolute right-16 top-0' src={dominosBread}>
+        className='h-1/5 lg:h-1/6 kt:h-1/7 absolute right-16 top-0' src={dominosBread}>
 
         </motion.img>
 
@@ -62,7 +62,7 @@ function Page1() {
          initial={{ y: 30, opacity: 0 }}
          animate={{ y: 0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-3/6 absolute bottom-0 left-8' src={domi1}>
+        className='h-3/6 lg:h-3/7 kt:h-3/9 absolute bottom-0 left-8 md:h-96' src={domi1}>
 
         </motion.img>
 
@@ -70,14 +70,14 @@ function Page1() {
          initial={{ y: 30,x:30, opacity: 0 }}
          animate={{ y: 0,x:0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-2/6  absolute right-0 bottom-0' src={dominosBreadSticks}>
+        className='h-2/6  lg:h-2/7 kt:h-3/9 absolute  right-0 bottom-0 md:invisible' src={dominosBreadSticks}>
 
         </motion.img>
 
 
       </div>
 
-      <div className='absolute left-4/10 top-24 '>
+      <div className='absolute left-4/10 top-24 md:invisible'>
         <img className='h-64 w-64 rounded-full' src={paths1}></img>
         <motion.div 
         initial={{y:20,opacity:0}}
