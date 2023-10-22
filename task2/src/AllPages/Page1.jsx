@@ -31,7 +31,7 @@ function Page1() {
       </div>
 
 
-      <div className='w-2/4 bg-slate-950 bg-cover relative flex md:h-1/2 md:w-screen'>
+      <div className='w-2/4 bg-slate-950 bg-cover relative  md:h-1/2 md:w-screen'>
 
         
           <motion.img 
@@ -46,7 +46,7 @@ function Page1() {
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1 }}
-        className='h-3/6 lg:h-3/7 sm:h-60  absolute top-28 right-32 ' src={domi2}>
+        className='h-3/6 lg:h-3/7 sm:h-60 md:w-28 absolute top-28 right-32 ' src={domi2}>
 
         </motion.img>
 
@@ -54,7 +54,7 @@ function Page1() {
          initial={{ y: -30,x:30, opacity: 0 }}
          animate={{ y: 0,x:0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-1/5 lg:h-1/6 kt:h-1/7 absolute right-16 top-0' src={dominosBread}>
+        className='h-1/5 lg:h-1/6 md:h-28 md:w-28 absolute right-16 top-0' src={dominosBread}>
 
         </motion.img>
 
@@ -62,7 +62,7 @@ function Page1() {
          initial={{ y: 30, opacity: 0 }}
          animate={{ y: 0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-3/6 lg:h-3/7 kt:h-3/9 absolute bottom-0 left-8 md:h-96' src={domi1}>
+        className='h-3/6 lg:h-3/7 md:h-28 md:w-28 absolute bottom-0 left-8 ' src={domi1}>
 
         </motion.img>
 
@@ -70,7 +70,7 @@ function Page1() {
          initial={{ y: 30,x:30, opacity: 0 }}
          animate={{ y: 0,x:0, opacity: 1 }}
          transition={{ type: "tween", duration: 1 }}
-        className='h-2/6  lg:h-2/7 kt:h-3/9 absolute  right-0 bottom-0 md:invisible' src={dominosBreadSticks}>
+        className='h-2/6  lg:h-2/7 md:h-96 absolute md:h-28 md:w-28 right-0 bottom-0 ' src={dominosBreadSticks}>
 
         </motion.img>
 
