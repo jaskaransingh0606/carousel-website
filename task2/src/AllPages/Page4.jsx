@@ -36,7 +36,7 @@ function Page4() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className='h-2/3 absolute top-32 right-20 md:h-80 md:top-8 md:right-8' src={nexgTv}>
+          className='h-2/3 absolute top-32 right-20 md:h-60 md:top-8 md:right-8' src={nexgTv}>
 
         </motion.img>
 
@@ -45,7 +45,7 @@ function Page4() {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "tween", duration: 1 }}
-          className='h-2/3 absolute top-32 left-20 md:h-80 md:top-8 md:left-8' src={nexgTvEntertainment}>
+          className='h-2/3 absolute top-32 left-20 md:h-60 md:top-8 md:left-8' src={nexgTvEntertainment}>
 
         </motion.img>
 

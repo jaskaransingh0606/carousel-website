@@ -30,7 +30,7 @@ function Page5() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className='h-2/3 absolute top-32 right-10 md:h-80 md:top-8 md:right-8' src={melltoo1}>
+          className='h-2/3 absolute top-32 right-10 md:h-60 md:top-8 md:right-8' src={melltoo1}>
 
         </motion.img>
 
@@ -39,7 +39,7 @@ function Page5() {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className='h-2/3 absolute top-40 left-40 md:h-80 md:top-8 md:left-8' src={melltoo2}>
+          className='h-2/3 absolute top-40 left-40 md:h-60 md:top-8 md:left-8' src={melltoo2}>
 
         </motion.img>
 
