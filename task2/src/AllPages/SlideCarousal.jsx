@@ -17,8 +17,8 @@ function CustomSlideShow() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000, // Adjust the autoplay speed (milliseconds)
+    autoplay: false,
+    autoplaySpeed: 3000, 
     arrows: false,
   };
 
@@ -32,8 +32,35 @@ function CustomSlideShow() {
         <div className="slide bg-gray-700 text-center h-40 flex justify-center items-center text-lg font-bold h-screen"><Page5 /></div>
         <div className="slide bg-gray-800 text-center h-40 flex justify-center items-center text-lg font-bold h-screen"><Page6 /></div>
         <div className="slide bg-gray-900 text-center h-40 flex justify-center items-center text-lg font-bold h-screen"><Page7 /></div>
-        {/* Add more slides as needed */}
+        
       </Slider>
+      <style>
+        {`
+          .slick-dots {
+            position: absolute;
+            bottom: 20px; // Adjust the distance from the bottom as needed
+            list-style: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 8px; // Adjust the spacing between dots as needed
+          }
+
+          .slick-dots li {
+            display: inline-block;
+          }
+
+          .slick-dots li button {
+            width: 10px; // Adjust the size of the dots as needed
+            height: 10px; // Adjust the size of the dots as needed
+            background: #333; // Adjust the color of the dots as needed
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        `}
+      </style>
+
     </div>
   );
 }

@@ -10,15 +10,15 @@ function Page7() {
   return (
     <div className='flex flex-row md:flex-col-reverse h-screen w-screen relative '>
 
-      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 md:w-screen bg-blue-950 justify-end  '>
+      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 sm:space-y-8 md:w-screen bg-blue-950 justify-end  '>
 
-        <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8 '>
+        <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8  sm:space-y-2 '>
           <div><p className='font-extrabold text-5xl sm:text-3xl '>ABC 567</p></div>
           <div><p className='sm:text-lg text-xl font-normal'>We are the best <br /> web development company <br /> in the world</p></div>
         </div>
 
         <div className='flex flex-row space-x-56 lg:space-x-40 align-center lg:space-x-20 pb-24 pl-16 md:pb-8'>
-          <div><p className='font-medium  text-xl '>View Case Study➡</p></div>
+          <div><p className='font-medium text-xl sm:text-base md:w-max sm:pt-16 '>View Case Study➡</p></div>
           <div><p className='font-medium text-xl md:invisible'>S K I P</p></div>
         </div>
 
@@ -62,7 +62,7 @@ function Page7() {
         initial={{ x: 20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1 }}
-        className='h-2/4  absolute right-2 top-40 md:invisible' src={developerSocial}>
+        className='h-2/4  absolute right-1 top-40 md:invisible' src={developerSocial}>
 
         </motion.img>
 

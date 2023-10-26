@@ -15,16 +15,16 @@ function Page1() {
 
     <div className='flex flex-row md:flex-col-reverse  h-screen  w-screen relative  '>
 
-      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 md:w-screen bg-slate-900 justify-end  '>
+      <div className=' flex flex-col w-2/4 space-y-16  sm:space-y-8 md:h-3/6 md:w-screen bg-slate-900 justify-end  '>
         
-          <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8'>
-            <div><p className='font-extrabold text-5xl'>ABC 456</p></div>
-            <div><p className='text-xl md:text-lg font-normal'>We are the best <br /> web development company <br /> in the world</p></div>
+          <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8  sm:space-y-2 '>
+            <div><p className='font-extrabold text-5xl sm:text-3xl '>ABC 456</p></div>
+            <div><p className='text-xl md:text-lg sm:text-sm font-normal'>We are the best <br /> web development company <br /> in the world</p></div>
           </div>
        
 
         <div className='flex flex-row space-x-56 lg:space-x-20 align-center  pb-24 md:pb-8 pl-16'>
-          <div><p className='font-medium text-xl'>View Case Study ➡</p></div>
+          <div><p className='font-medium text-xl sm:text-base md:w-max sm:pt-16'>View Case Study ➡</p></div>
           <div><p className='font-medium text-xl md:invisible'>S K I P</p></div>
         </div>
 

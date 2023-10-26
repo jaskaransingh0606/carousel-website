@@ -8,16 +8,16 @@ function Page5() {
   return (
     <div className='flex flex-row h-screen w-screen  md:flex-col-reverse relative'>
 
-      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 md:w-screen bg-emerald-800 justify-end  '>
+      <div className=' flex flex-col w-2/4 space-y-16 md:h-3/6 sm:space-y-8 md:w-screen bg-emerald-800 justify-end  '>
 
-        <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8 '>
-          <div><img src={entrepreneur}></img></div>
-          <div><p className='font-extrabold text-5xl'>ABC 23478</p></div>
+        <div className='flex flex-col space-y-6 mb-10 pl-16 md:-mb-8  sm:space-y-2 '>
+          <div className='md:z-10'><img className='md:z-10 md:h-20 md:ml-20 sm:ml-12' src={entrepreneur}></img></div>
+          <div><p className='font-extrabold text-5xl sm:text-3xl'>ABC 23478</p></div>
           <div><p className='text-xl md:text-lg font-normal'>We are the best <br /> web development company in the world</p></div>
         </div>
 
         <div className='flex flex-row space-x-56 align-center lg:space-x-20  pb-24 pl-16 md:pb-8'>
-          <div><p className='font-medium text-xl'>View Case Study ➡</p></div>
+          <div><p className='font-medium text-xl sm:text-base md:w-max sm:pt-16'>View Case Study ➡</p></div>
           <div><p className='font-medium text-xl md:invisible'>S K I P</p></div>
         </div>
 
